@@ -1,0 +1,10 @@
+ Clínica: 
+- C aceita convênio; 
+- Quem q atende e o que faz o médico; ok 
+- Horas que estão trabalhando; ok 
+- Verificar c vai retirar algum exame (dá o status do exame e quando pode retirar ->data prevista) ok
+- Marcar consulta;
+- Informações sobre 
+- Perguntar pra pessoa oq ela tem, pra ver o grau do q a pessoa tem
+- Local, informações que vão ajudar comprar, ir.
+- Falar sobre o novembro amarelo.

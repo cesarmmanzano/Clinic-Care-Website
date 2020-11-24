@@ -1,0 +1,28 @@
+*{
+    background-color: rgba(105, 89, 250, 0.226);
+}
+
+.place{
+    align-items: left;
+    text-align:left;
+    padding-left: 1rem;
+    margin-top: 4rem;
+    
+}
+
+.perfil-image{
+align-content: center;
+background: chartreuse;
+float:left;
+height:90px;
+align-items: initial;
+float:left;
+}
+
+.textos{
+    text-align:left;
+    padding-left: 100px;
+    align-items: initial;
+    margin-left: 1rem;
+}
+
