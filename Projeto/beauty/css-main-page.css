@@ -1,6 +1,6 @@
 *{
 
-    background-color: rgba(165, 159, 245, 0.267);
+    background-color: rgba(212, 209, 245, 0.267);
 }
 
 .sla {
@@ -11,6 +11,7 @@
 
 .option{
     padding-left: 20%;
+    color:white;
 }
 
 .text{
@@ -20,11 +21,11 @@
 }
 
 
-
-a:link{
-   
-   color: white;
+#icon{
+    height: 100px;
+    width:150px;
 }
+
 
 
 
