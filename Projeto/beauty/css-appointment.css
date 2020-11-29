@@ -2,3 +2,45 @@
 
     background-color: rgba(212, 209, 245, 0.267);
 }
+
+#contact{
+background: chartreuse;
+}
+
+.title{
+text-align: center;
+border-radius: 100px;
+}
+
+#personal{
+    margin-top: 1.2rem;
+    /* border-radius: 100px; */
+    
+}
+
+.info{
+  
+   margin-top: 1rem;
+   margin-bottom: 0.2rem;
+   
+}
+
+.slanome{
+    padding-left: 1rem;
+}
+
+
+#name-page{
+    margin-bottom: 2rem;
+    padding-left: 13%;
+}
+
+#buttons{
+   padding-left: 6rem;
+   margin-top: 1rem;
+   background-color:  rgba(212, 209, 245, 0.267);
+}
+
+div{
+    align-items: center;
+}

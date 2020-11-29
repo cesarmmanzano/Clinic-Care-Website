@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link type ="text/css" rel ="stylesheet" href ="/bootstrap-4.5.2-dist/css/bootstrap.min.css">
-    <link type ="text/css" rel ="stylesheet" href ="/beauty/css-main-page.css">
-    <link type="text/css" rel ="styleshhet"  href = "/beauty/css-chatbot.css">
+    <link type="text/css" rel="stylesheet" href="/beauty/css-appointment.css">
     
     <script type="text/javascript" src="/backwork/functions.js"> </script>
     
@@ -18,24 +17,27 @@
     <form>
         <p>Usaremos os seus dados para marcar a consulta e informar sobre a consulta. </p>
 
-        <h4>Cadastro</h4>
+        <h4 id="name-page"> Cadastro</h4>
 
-        <div> <h5>Informações Pessoais</h5>
-            Nome: <input type="text" name="Nome" placeholder="Nome Completo"><br>
-            CPF:  <input type="text" name="CPF" placeholder="CPF(99.999.999-9)"><br>
-            Sexo: <input type="radio" name="male"> Masculino
+        <div id="personal"> <h5 class="title">Informações Pessoais</h5>
+            <div class="slanome">
+            Nome: <input type="text" class="info" name="Nome" placeholder="Nome Completo" required><br>
+            CPF:  <input type="text"  class="info" name="CPF" placeholder="CPF(99.999.999-9)" pattern = "\d{5}[\-]\d{3}" required><br>
+            Sexo: <input type="radio" class="info" name="male"> Masculino
                   <input type="radio" name="female"> Feminino <br>
-            Data de Nascimento: <input type="date" name="date"><br> 
-            Senha: <input type="password" name="password" placeholder="Senha" required><br>
+            Data de Nascimento: <input type="date" class="info" name="date"><br> 
+            Senha: <input type="password" class="info" name="password" placeholder="Senha" required><br>
+            </div>
         </div>
 
-        <div> <h5>Informações para contato</h5>
-        
-            Telefone: <input type="number"> <br>
-            E-mail: <input type="text" name="E-mail" placeholder="Digite seu email" required> <br>
+        <div id="personal"> <h5 class="title">Informações para contato</h5>
+            <div class=slanome>
+            Telefone: <input type="number" class="info" name="Tefelone" pattern = "[\(]\d{2}[\)]\d{4}[\-]\d{4}" required> <br>
+            E-mail: <input type="text" class="info" name="E-mail" placeholder="Digite seu e-mail" required> <br>
+            </div>
         </div>
 
-            <input type="reset" name="Cancelar Cadastro" onclick="cancelRegister();"> <input type="submit" name="Cadastrar" onclick="confirmRegister();">
+          <div id="buttons">  <input type="reset" name="Cancelar Cadastro" onclick="cancelRegister();"> <input type="submit" name="Cadastrar" onclick="confirmRegister();"> </div>
     </form>
     
 </body>
