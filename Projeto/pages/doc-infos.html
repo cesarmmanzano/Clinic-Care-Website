@@ -1,82 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type ="text/css" rel ="stylesheet" href ="/beauty/css-doc-infos.css">
-    <script type="text/javascript" src="/backwork/functions.js"></script>
+
+    <link href="../bootstrap-4.5.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel ="stylesheet" href ="/beauty/css-doc-infos.css">
+
+    <script src="../bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../backwork/functions.js"></script>
+
+
     <title>Doctors</title>
 
 </head>
-    <body>
 
-    <div class= "container place">
+<body>
+
+    <nav class="navbar navbar-light navbar-default" style="background-color: #3F4CF8;">
+        <div class="container-fluid mx-auto" 
+        style="width: 70%; 
+        justify-content: start; ">
+
+            <a class="navbar-brand" href="./main-page.html">
+                <img src="../dsBuffer.jpg" width="80" height="50" class="d-inline-block align-top" alt="">
+            </a>
+
+            <a class="navbar-brand" href= "./appointment.html"  > 
+                <span>Agendar Consulta</span>
+            </a>
     
-        <img src ="/dsBuffer.jpg" class = "perfil-image">
+            <a class="navbar-brand" href="./doc-infos.html">
+                <span>Lista de Médicos</span>
+            </a>
+        </div>
+    </nav>
 
-        <div class = "texts">
+    <div class="container" style="padding-bottom: 4em;">
 
-            <p>
-            Nome: Ana Messquita<br>
-            Local de atendimento<br>
-            Numero: 9999-9999<br>
-            Especialização:<br>
-            Marcar consulta com o médico online(Chatbot)
+    <h2>Lista dos Médicos que Trabalham com a plataforma</h2>
 
-            </p> 
+    <span class="description"> Aqui você irá encontrar uma lista de todos os médicos que 
+    utilizam nossa plataforma de forma inovadora, e que como
+    todos que já testaram, recomendam.</span>
+
+    </div>
+
+    <div class="container">
+        <div class="accordion" id="divMedic">
+            <div class="card bordered">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Clínico Geral
+                    </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#divMedic">
+                    <div class="card-body">
+                            <img src ="/dsBuffer.jpg" class = "perfil-image">
+
+                            <p>
+                                Nome: Ana Mesquita <br>
+                                Numero para atendimento: 9999-9999
+                                <button class="local">
+                                    Local de atendimento 
+                                </button>
+                                <br>CRM: 99999 - SP<br>
+                                Marcar consulta com o médico online(Chatbot)
+                    
+                            </p> 
+                    </div>
+                </div>
+
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapseOne">
+                        Cardiologista
+                    </button>
+                    </h5>
+                </div>
+
+                <div id="collapse2" class="collapse show" aria-labelledby="headingOne" data-parent="#divMedic">
+                    <div class="card-body">
+
+                            <img src ="/dsBuffer.jpg" class = "perfil-image">
+
+                            <p>
+                                Nome: Kauã Landim Vinhas <br>
+                                Numero para atendimento: 9997-9997
+                                <button class="local">
+                                    Local de atendimento 
+                                </button>
+                                <br>CRM: 99997 - SP<br>
+                                Marcar consulta com o médico online(Chatbot)
+                    
+                            </p> 
+
+                    </div>
+                </div>
+
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
+                        Nutricionista
+                    </button>
+                    </h5>
+                </div>
+
+                <div id="collapse3" class="collapse show" aria-labelledby="headingOne" data-parent="#divMedic">
+                    <div class="card-body">
+
+                            <img src ="/dsBuffer.jpg" class = "perfil-image">
+
+                            
+                                Nome: Nicolly Resende <br>
+                                Numero para atendimento: 9996-9996
+                                <button class="local">
+                                    Local de atendimento 
+                                </button>
+                                <br>CRM: 99996 - SP<br>
+                                Marcar consulta com o médico online(Chatbot)
+                    </div>
+                </div>
+
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapseOne">
+                        Ortopedista
+                    </button>
+                    </h5>
+                </div>
+
+                <div id="collapse4" class="collapse show" aria-labelledby="headingOne" data-parent="#divMedic">
+                    <div class="card-body">
+
+                            <img src ="/dsBuffer.jpg" class = "perfil-image">
+
+                            <p>
+                                Nome: Eliel Lourenço <br>
+                                Numero para atendimento: 9998-9998
+                                <button class="local">
+                                    Local de atendimento 
+                                </button>
+                                <br>CRM: 99998 - SP<br>
+                                Marcar consulta com o médico online(Chatbot)
+                    
+                            </p> 
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div class= "container place">
-     
-        <img src ="/dsBuffer.jpg" class = "perfil-image">
-
-        <div class = "texts">
-
-            <p>
-            Nome: Eliel Lourenço<br>
-            Local de atendimento<br>
-            Numero: 9999-9999<br>
-            Especialização:<br>
-            Marcar consulta com o médico online(Chatbot)
-
-            </p> 
-        </div>
-    </div>
-
-    <div class= "container place">
-     
-        <img src ="/dsBuffer.jpg" class = "perfil-image">
-
-        <div class = "texts">
-
-            <p>
-            Nome: Kauã Landim Vinhas<br>
-            Local de atendimento<br>
-            Numero: 9999-9999<br>
-            Especialização:<br>
-            Marcar consulta com o médico online(Chatbot)
-
-            </p> 
-        </div>
-    </div>
-
-    <div class= "container place">
-     
-        <img src ="/dsBuffer.jpg" class = "perfil-image">
-
-        <div class = "texts">
-
-            <p>
-            Nome: Nicolly Resende<br>
-            Local de atendimento<br>
-            Numero: 9999-9999<br>
-            Especialização:<br>
-            Marcar consulta com o médico online(Chatbot)
-
-            </p> 
-        </div>
-    </div>
     
 </body>
 </html>

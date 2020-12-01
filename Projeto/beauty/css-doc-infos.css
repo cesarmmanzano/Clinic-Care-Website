@@ -1,28 +1,37 @@
-*{
-    background-color: rgba(177, 172, 236, 0.267);
+body {
+    background-color: #dae7ef;
 }
 
-.place{
-    align-items: left;
-    text-align: left;
-    padding-left: 1rem;
-    margin-top: 4rem;
-    
+span {
+    color: black;
+    margin-left: 2em;
 }
 
-.perfil-image{
+h2 {
+    font-size: 24px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+} 
 
-margin-top:1px;
-float:left;
-height: 88px;
-width: 110px;
+p {
+    text-decoration: none;
 }
 
-.texts{
-    text-align:left;
-    padding-left: 100px;
-    align-items: initial;
-    margin-left: 1rem;
+.description {
+    color: #000;
 }
 
+#divMedic {
+    max-width: 710px;
+}
 
+.perfil-image {
+    margin-top:1px;
+    float:left;
+    height: 88px;
+    width: 110px;
+}
+
+.local {
+    margin-left: 100px;
+}
