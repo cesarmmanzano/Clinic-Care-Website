@@ -1,0 +1,37 @@
+body {
+    background-color: #dae7ef;
+}
+
+span {
+    color: black;
+    margin-left: 2em;
+}
+
+h2 {
+    font-size: 24px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+} 
+
+p {
+    text-decoration: none;
+}
+
+.description {
+    color: #000;
+}
+
+#divMedic {
+    max-width: 710px;
+}
+
+.perfil-image {
+    margin-top:1px;
+    float:left;
+    height: 88px;
+    width: 110px;
+}
+
+.local {
+    margin-left: 100px;
+}
