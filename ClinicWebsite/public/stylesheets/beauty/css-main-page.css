@@ -3,8 +3,13 @@
     background-color: #dae7ef;
 }
 
+#icon{
+    margin: 5px;
+}
+
 .change-slide{
     margin-bottom: 10px;
+    
 }
 
 .side{
@@ -14,11 +19,16 @@
 .sla {
     
     background-color: rgb(63, 76, 248);
+    font-family: 'PT Sans', sans-serif;
     
 }
 
+.slanome{
+    font-family: 'PT Sans', sans-serif;
+}
+
 .option{
-    padding-left: 20%;
+    padding-left: 5%;
     color:white;
 }
 
@@ -26,6 +36,14 @@
 
     background-color: rgba(66, 72, 243, 0.616);
     margin-top: 3rem;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: 'PT Sans', sans-serif;
+   
+}
+
+p.text a{
+    color: white;
 }
 
 
@@ -41,14 +59,17 @@
     padding-bottom: 30px;
 }
 
+#debug{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    max-width: 400px;
+   
+}
+
 .carousel-inner img {
 margin:auto;
 }
-/* 
-.slide{
-position: bottom;
-margin-bottom:50px;
-} */
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -82,6 +103,7 @@ margin-bottom:50px;
     width: 1000px;
     height: 300px;
 }
+
 
 
 
