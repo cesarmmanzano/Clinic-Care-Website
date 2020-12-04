@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../stylesheets/bootstrap-4.5.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/beauty/css-doc-infos.css">
+
+    <script src="../stylesheets/bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="../stylesheets/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascripts/backwork/functions.js"></script>
+    <script src="../javascripts/easyResponsiveTabs.js"></script>
+    <script src="../javascripts/backwork/doc-infos.js"></script>
+
+    <!-- Maps Configuration -->
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+    <link rel="stylesheet" href="../stylesheets/maps.css">
+
+    <title>Doctors</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-default" style="background-color: #3F4CF8;">
+        <div class="container-fluid mx-auto" style="width: 70%; 
+        justify-content: start; ">
+
+            <a class="navbar-brand" href="main-page.html">
+                <img src="../images/dsBuffer.jpg" width="80" height="50" class="d-inline-block align-top" alt="">
+            </a>
+
+            <a class="navbar-brand" href="appointment.html">
+                <span class="navName">Agendar Consulta</span>
+            </a>
+
+            <a class="navbar-brand" href="doc-infos.html">
+                <span class="navName">Lista de Médicos</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-bottom: 4em;">
+
+        <h2>Lista dos Médicos que Trabalham com a plataforma</h2>
+
+        <span class="description"> Aqui você irá encontrar uma lista de todos os médicos que
+            utilizam nossa plataforma de forma inovadora, e que como
+            todos que já testaram, recomendam.</span>
+
+    </div>
+
+    <div class="container-fluid mx-auto">
+        <!-- Easy-responsive-tabs-to-accordion is developed by <a href="https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion">Samson</a> -->
+        <!--Horizontal Tab-->
+        <div id="parentHorizontalTab">
+            <ul class="resp-tabs-list hor_1">
+                <li>Clínico Geral</li>
+                <li>Cardiologista</li>
+                <li>Ortopedista</li>
+            </ul>
+            <div class="resp-tabs-container hor_1">
+                <div>
+                    <p>
+                        <!--vertical Tabs-->
+                        <div id="ChildVerticalTab_1">
+                            <ul class="resp-tabs-list ver_1">
+                                <li>Ana Mesquita</li>
+                                <li>Kauã Landim Vinhas</li>
+                            </ul>
+                            <div class="resp-tabs-container ver_1">
+                               <div>
+                                   <p>
+                                    Nome: Ana Mesquita <br>
+                                    Numero para atendimento: 9999-9999 <br>
+                                    Local de atendimento <br>
+                                    CRM: 99999 - SP <br>
+                                    Marcar consulta com o médico online(Chatbot) <br>
+
+                                    <div id="map1"></div>
+                                   </p>
+                               </div>
+
+                             <div>
+                                <p>
+                                Nome: Kauã Landim Vinhas <br>
+                                Numero para atendimento: 9997-9997 <br>
+                                Local de atendimento <br>
+                                CRM: 99997 - SP<br>
+                                Marcar consulta com o médico online(Chatbot) <br>
+ 
+                                <div id="map2"></div>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                    </p>
+                    <p>Tab 1 Container</p>
+                </div>
+
+                <div>
+                    <p>
+                        <!--vertical Tabs-->
+                        <div id="ChildVerticalTab_2">
+                            <ul class="resp-tabs-list ver_1">
+                                <li>Nicolly Resende</li>
+                            </ul>
+                            <div class="resp-tabs-container ver_1">
+                               <div>
+                                   <p>
+                                    Nome: Nicolly Resende <br>
+                                    Numero para atendimento: 9996-9996 <br>
+                                    Local de atendimento <br>
+                                    CRM: 99996 - SP<br>
+                                    Marcar consulta com o médico online(Chatbot) <br>
+
+                                    <div id="map3"></div>
+                                   </p>
+                               </div>
+                            </div>
+                        </div>
+                    </p>
+                    <p>Tab 2 Container</p>
+                </div>
+ 
+                <div>
+                    <p>
+                        <!--vertical Tabs-->
+                        <div id="ChildVerticalTab_3">
+                            <ul class="resp-tabs-list ver_1">
+                                <li>Eliel Lourenço</li>
+                            </ul>
+                            <div class="resp-tabs-container ver_1">
+                               <div>
+                                   <p>
+                                    Nome: Eliel Lourenço <br>
+                                    Numero para atendimento: 9998-9998 <br>
+                                    Local de atendimento <br>
+                                    CRM: 99998 - SP<br>
+                                    Marcar consulta com o médico online(Chatbot) <br>
+
+                                    <div id="map4"></div>
+                                   </p>
+                               </div>
+                            </div>
+                        </div>
+                    </p>
+                    <p>Tab 3 Container</p>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
