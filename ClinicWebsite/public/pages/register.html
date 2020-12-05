@@ -15,8 +15,26 @@
 
 <body>
 
-    <form name="register" class="text-center border border-light p-5" action="#!">
-        <p class="h4 mb-4">Cadastro</p>
+    <nav class="navbar navbar-light navbar-default navbar-blue">
+        <div class="container-fluid mx-auto navbar-blue" style="width: 70%;
+        justify-content: start;">
+
+            <a class="navbar-brand navbar-blue" href="main-page.html">
+                <img src="../images/logo.jpeg" width="80" height="50" class="d-inline-block align-top navbar-blue" alt=""">
+            </a>
+
+            <a class="navbar-brand navbar-blue" href="appointment.html">
+                <span class="navName navbar-blue">Agendar Consulta</span>
+            </a>
+
+            <a class="navbar-brand navbar-blue" href="doc-infos.html">
+                <span class="navName navbar-blue">Lista de Médicos</span>
+            </a>
+        </div>
+    </nav>
+
+    <form name="register" class="text-center border border-light p-5 cadastro" action="#!">
+        <p class="h4 mb-4 cadastro">Cadastro</p>
 
         <div class="form-row mb-4">
             <div class="col">
@@ -25,13 +43,13 @@
             </div>
             <div class="col">
                 <!-- CPF -->
-                <input type="text" id="registerCpf" class="form-control" placeholder="CPF 999999999-99"
+                <input type="text" id="registerCpf" class="form-control" placeholder="CPF: 999999999-99"
                     pattern="\d{5}[\-]\d{3}" required>
             </div>
             <div class="col">
                 <!-- Telefone -->
                 <input type="text" id="registerTel" class="form-control" pattern="[\(]\d{2}[\)]\d{4}[\-]\d{4}"
-                    placeholder="TEL (99) 9999-9999" required>
+                    placeholder="TEL: (99) 9999-9999" required>
             </div>            
         </div>
 
