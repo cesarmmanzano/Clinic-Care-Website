@@ -29,7 +29,7 @@
 
 .option{
     padding-left: 5%;
-    color:white;
+    color:black;
 }
 
 .text{
@@ -41,6 +41,7 @@
     font-family: 'PT Sans', sans-serif;
    
 }
+
 
 p.text a{
     color: white;
