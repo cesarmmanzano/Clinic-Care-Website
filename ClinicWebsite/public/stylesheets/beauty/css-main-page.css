@@ -29,7 +29,7 @@
 
 .option{
     padding-left: 5%;
-    color:white;
+    color:black;
 }
 
 .text{
@@ -42,6 +42,7 @@
    
 }
 
+
 p.text a{
     color: white;
 }
@@ -49,7 +50,7 @@ p.text a{
 
 #icon{
     height: 100px;
-    width:150px;
+    width:100px;
 }
 
 .image{

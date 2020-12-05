@@ -47,6 +47,10 @@ text-align: center;
     max-width: 123px;
     margin-bottom: 4rem;
 }
+.cadastro{
+
+    padding-top:100px;
+}
 
 #buttons{
    padding-left: 330px;
@@ -56,6 +60,11 @@ text-align: center;
 
 .title{
     position: center;
+}
+
+.navbar-blue{
+    background-color: blue;
+
 }
 
 
