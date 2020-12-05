@@ -13,6 +13,7 @@
     <script src="../javascripts/backwork/functions.js"></script>
     <script src="../javascripts/easyResponsiveTabs.js"></script>
     <script src="../javascripts/backwork/doc-infos.js"></script>
+    <script src="../javascripts/ibmWatson.js"></script>
 
     <!-- Maps Configuration -->
     <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
@@ -25,23 +26,38 @@
 
 <body>
 
-    <nav class="navbar navbar-light navbar-default" style="background-color: #3F4CF8;">
-        <div class="container-fluid mx-auto" style="width: 70%;
-        justify-content: start;">
+    <nav class="navbar navbar-light navbar-expand-lg navbar-default" style="background-color: #3F4CF8;">
+        <div class="container-fluid">
 
-            <a class="navbar-brand" href="main-page.html">
-                <img src="../images/dsBuffer.jpg" width="80" height="50" class="d-inline-block align-top" alt=""">
+            
+            <a class="navbar-brand" href="main-page.html" target="blank">
+                <img src="../images/logo.jpeg" width="120" height="100" class="d-inline-block align-top" alt="">
             </a>
 
-            <a class="navbar-brand" href="appointment.html">
-                <span class="navName">Agendar Consulta</span>
-            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <a class="navbar-brand" href="doc-infos.html">
-                <span class="navName">Lista de Médicos</span>
-            </a>
+            <div id="menu" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class=" nav-link" href="main-page.html" target="blank">
+                            Página principal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="register.html" target="blank">
+                            Cadastrar
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
     </nav>
+
 
     <div class="container" style="padding-bottom: 2em;">
 
@@ -144,7 +160,24 @@
                         </div>
                     </div>
                     </p>
-                    <p>Agendar Consulta com chatbot</p>
+
+                    <!-- Chatbot chat (fix necessary) -->
+                    <div class="panel-heading" id="accordion">
+                        <div class="btn-group pull-right">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseOne">Marcar consulta com chatbot</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="panel-collapse collapse" id="collapseOne">
+                        <form name="formChatbot" method="POST">
+                            <input type="text">
+                            <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
+                        </form>
+                        <br>
+                        <div id="chat"></div>
+                    </div>
+
                 </div>
             </div>
         </div>

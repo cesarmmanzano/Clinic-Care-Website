@@ -2,14 +2,14 @@ var contextDialog = '{}';
 
 function sendMessageToAssistant() {
     var textMessage = document.chatForm.textMessage.value;
-    chat = document.getElementById('x'); //incluir nome do form a ser utilizado
+    chat = document.getElementById('chat'); 
 
     if (textMessage === undefined || textMessage === '')
         textMessage = '';
     else
-        x.innerHTML += 'Voce -->' + textMessage + '<br>';
+        chat.innerHTML += 'Voce -->' + textMessage + '<br>';
 
-    document.x.textMessage.value = ''; //incluir nome do form a ser utilizado
+    document.chat.textMessage.value = ''; 
 
     //Post para o serviço da ibm
     $.post("/ibmWatson/assistant",
@@ -18,7 +18,7 @@ function sendMessageToAssistant() {
         function (returnedData, statusRequest) {
             if (returnedData.status === 'ERRO') alert(returnedData.data);
             else {
-                x.innerHTML += 'ChatBot --> ' + returnedData.data.result.output.text + '<br>'; //incluir nome do form a ser utilizado
+                chat.innerHTML += 'ChatBot --> ' + returnedData.data.result.output.text + '<br>'; 
                 contextDialog = JSON.stringify(returnedData.data.result.context);
             }
         }

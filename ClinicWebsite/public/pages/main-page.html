@@ -6,29 +6,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link type="text/css" rel="stylesheet" href="../stylesheets/bootstrap-4.5.2-dist/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="../stylesheets/beauty/css-main-page.css">
+  <link href="../stylesheets/bootstrap-4.5.2-dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheets/beauty/css-doc-infos.css">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
-  <script type="text/javascript" src="../stylesheets/bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="../stylesheets/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../stylesheets/bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
+  <script src="../stylesheets/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
 
-
-  <title>Group Hospital</title>
+  <title>Home</title>
 
 </head>
 
 <body>
+  <nav class="navbar navbar-light navbar-expand-lg navbar-default" style="background-color: #3F4CF8;">
+    <div class="container-fluid">
 
+
+      <a class="navbar-brand" href="main-page.html" target="blank">
+        <img src="../images/logo.jpeg" width="120" height="100" class="d-inline-block align-top" alt="">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+        aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="menu" class="collapse navbar-collapse">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class=" nav-link" href="register.html" target="blank">
+              Cadastrar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="doc-infos.html" target="blank">
+              Lista de Médicos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
   <div id="all-text">
-    <header class="container sla">
-
-      <img src="../images/dsBuffer.jpg" id="icon">
-      <a href="doc-infos.html" target="_blank" class="option"> Médicos disponíveis </a>
-      <a href="appointment.html" target="_blank" class="option"> Agendar Consulta</a>
-
-    </header>
 
     <p class="container text">
       Olá, somos o group Hospital, o hospital mais novo na região. Estamos aqui para dar um melhor atendimento para as
