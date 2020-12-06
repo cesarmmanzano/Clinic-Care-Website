@@ -13,7 +13,6 @@
 
     <script src="../stylesheets/bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
     <script src="../stylesheets/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="../javascripts/backwork/functions.js"> </script>
 
     <title>Agendamento</title>
 </head>
@@ -53,46 +52,71 @@
 
     <div style="background-color: aliceblue;">
         
-        <form name="register" class="text-center border border-light p-5 cadastro" action="#!">
-            <p class="h4 mb-4 cadastro">Cadastro</p>
+        <form name="register" class="text-center border border-light p-5" action="#!">
+            <p class="h4 mb-4">Cadastro</p>
 
+            <!-- Nome cpf tel-->
             <div class="form-row mb-4">
                 <div class="col">
                     <!-- Nome -->
-                    <input type="text" id="registerName" class="form-control" placeholder="Nome Completo">
+                    <input type="text" id="registerName" class="form-control" placeholder="Nome" required>
                 </div>
                 <div class="col">
                     <!-- CPF -->
                     <input type="text" id="registerCpf" class="form-control" placeholder="CPF: 999999999-99"
-                        pattern="\d{5}[\-]\d{3}" required>
+                        pattern="\d{9}[\-]\d{2}" required>
                 </div>
                 <div class="col">
-                    <!-- Telefone -->
+                    <!-- Telefone -->                
                     <input type="text" id="registerTel" class="form-control" pattern="[\(]\d{2}[\)]\d{4}[\-]\d{4}"
-                        placeholder="TEL: (99) 9999-9999" required>
+                        placeholder="TEL: (99) 9999-9999">
                 </div>
             </div>
 
-            <div class="mb-4" style="text-align: left;">
+            <!-- Sexo -->
+            <div class="mb-4" style="text-align: center;">
                 <!-- Sexo M -->
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" class="custom-control-input" id="defaultInline1"
-                        name="inlineDefaultRadiosExample">
+                        name="registerGender">
                     <label class="custom-control-label" for="defaultInline1">Masculino</label>
                 </div>
 
                 <!-- Sexo F -->
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" class="custom-control-input" id="defaultInline2"
-                        name="inlineDefaultRadiosExample">
+                        name="registerGender">
                     <label class="custom-control-label" for="defaultInline2">Feminino</label>
                 </div>
 
                 <!-- Sexo Outros -->
                 <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" class="custom-control-input" id="defaultInline3"
-                        name="inlineDefaultRadiosExample">
+                        name="registerGender">
                     <label class="custom-control-label" for="defaultInline3">Outro</label>
+                </div>
+            </div>
+
+            <div class="form-row mb-4">
+                <div class="col">
+                    <!-- CEP -->
+                    <input type="text" id="registerCep" class="form-control" placeholder="CEP" pattern="\d{5}[\-]\d{3}" required>
+                </div>
+                <div class="col">
+                    <!-- Endereço -->
+                    <input type="text" id="registerAdress" class="form-control" placeholder="Endereço" required>
+                </div>
+                <div class="col">
+                    <!-- Estado -->
+                    <input type="text" id="registerState" class="form-control" placeholder="Estado" required>
+                </div>
+                <div class="col">
+                    <!-- Cidade -->
+                    <input type="text" id="registerCity" class="form-control" placeholder="Cidade" required>
+                </div>                
+                <div class="col">
+                    <!-- Complemento -->
+                    <input type="text" id="registerComplemento" class="form-control" placeholder="Complemento">
                 </div>
             </div>
 
@@ -102,14 +126,14 @@
             <!-- Senha -->
             <input type="password" id="registerPassword" class="form-control" placeholder="Senha">
             <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-                A senha precisa ter pelo menos: 1 número, 1 caracter especial ($, @, *, ...) e letras maiúsculas e
+                A senha precisa ter pelo menos: 1 número, 1 caracter especial ($, @, *, ...), letras maiúsculas e
                 minúsculas
             </small>
 
             <!-- Newsletter -->
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="registerNews">
-                <label class="custom-control-label">Receba novidades pelo e-mail</label>
+                <input type="checkbox" class="form-check-input" id="registerNews">
+                <label class="form-check-label">Receba novidades pelo e-mail</label>
             </div>
 
             <!-- Sign up button -->
@@ -118,6 +142,7 @@
 
     </div>
 
+    <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark" style="background-color: #7071FA;">
 
         <div class="row py-1 d-flex align-items-center"></div>
