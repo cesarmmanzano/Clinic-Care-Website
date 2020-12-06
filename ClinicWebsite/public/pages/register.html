@@ -7,7 +7,8 @@
 
     <link href="../stylesheets/bootstrap-4.5.2-dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/beauty/css-doc-infos.css">
-    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"
+        rel="stylesheet">
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 
     <script src="../stylesheets/bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
@@ -50,87 +51,72 @@
         </div>
     </nav>
 
-    <form name="register" class="text-center border border-light p-5 cadastro" action="#!">
-        <p class="h4 mb-4 cadastro">Cadastro</p>
+    <div style="background-color: aliceblue;">
+        
+        <form name="register" class="text-center border border-light p-5 cadastro" action="#!">
+            <p class="h4 mb-4 cadastro">Cadastro</p>
 
-        <div class="form-row mb-4">
-            <div class="col">
-                <!-- Nome -->
-                <input type="text" id="registerName" class="form-control" placeholder="Nome Completo">
-            </div>
-            <div class="col">
-                <!-- CPF -->
-                <input type="text" id="registerCpf" class="form-control" placeholder="CPF: 999999999-99"
-                    pattern="\d{5}[\-]\d{3}" required>
-            </div>
-            <div class="col">
-                <!-- Telefone -->
-                <input type="text" id="registerTel" class="form-control" pattern="[\(]\d{2}[\)]\d{4}[\-]\d{4}"
-                    placeholder="TEL: (99) 9999-9999" required>
-            </div>
-        </div>
-
-        <div class="mb-4" style="text-align: left;">
-            <!-- Sexo M -->
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
-                <label class="custom-control-label" for="defaultInline1">Masculino</label>
+            <div class="form-row mb-4">
+                <div class="col">
+                    <!-- Nome -->
+                    <input type="text" id="registerName" class="form-control" placeholder="Nome Completo">
+                </div>
+                <div class="col">
+                    <!-- CPF -->
+                    <input type="text" id="registerCpf" class="form-control" placeholder="CPF: 999999999-99"
+                        pattern="\d{5}[\-]\d{3}" required>
+                </div>
+                <div class="col">
+                    <!-- Telefone -->
+                    <input type="text" id="registerTel" class="form-control" pattern="[\(]\d{2}[\)]\d{4}[\-]\d{4}"
+                        placeholder="TEL: (99) 9999-9999" required>
+                </div>
             </div>
 
-            <!-- Sexo F -->
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-                <label class="custom-control-label" for="defaultInline2">Feminino</label>
+            <div class="mb-4" style="text-align: left;">
+                <!-- Sexo M -->
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline1"
+                        name="inlineDefaultRadiosExample">
+                    <label class="custom-control-label" for="defaultInline1">Masculino</label>
+                </div>
+
+                <!-- Sexo F -->
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline2"
+                        name="inlineDefaultRadiosExample">
+                    <label class="custom-control-label" for="defaultInline2">Feminino</label>
+                </div>
+
+                <!-- Sexo Outros -->
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline3"
+                        name="inlineDefaultRadiosExample">
+                    <label class="custom-control-label" for="defaultInline3">Outro</label>
+                </div>
             </div>
 
-            <!-- Sexo Outros -->
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
-                <label class="custom-control-label" for="defaultInline3">Outro</label>
+            <!-- E-mail -->
+            <input type="email" id="registerEmail" class="form-control mb-4" placeholder="E-mail">
+
+            <!-- Senha -->
+            <input type="password" id="registerPassword" class="form-control" placeholder="Senha">
+            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                A senha precisa ter pelo menos: 1 número, 1 caracter especial ($, @, *, ...) e letras maiúsculas e
+                minúsculas
+            </small>
+
+            <!-- Newsletter -->
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="registerNews">
+                <label class="custom-control-label">Receba novidades pelo e-mail</label>
             </div>
-        </div>
 
-        <!-- E-mail -->
-        <input type="email" id="registerEmail" class="form-control mb-4" placeholder="E-mail">
+            <!-- Sign up button -->
+            <button class="btn btn-info my-4 btn-block" type="submit">Cadastrar!</button>            
+        </form>
 
-        <!-- Senha -->
-        <input type="password" id="registerPassword" class="form-control" placeholder="Senha">
-        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-            A senha precisa ter pelo menos: 1 número, 1 caracter especial ($, @, *, ...) e letras maiúsculas e
-            minúsculas
-        </small>
-
-        <!-- Newsletter -->
-        <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="registerNews">
-            <label class="custom-control-label">Receba novidades pelo e-mail</label>
-        </div>
-
-        <!-- Sign up button -->
-        <button class="btn btn-info my-4 btn-block" type="submit">Cadastrar!</button>
-
-        <!--<div id="personal">
-            <div class="slanome">
-                Nome: <input type="text" class="info" name="Name" placeholder="Nome Completo" required><br>
-                CPF: <input type="text" class="info" name="CPF" placeholder="CPF(99.999.999-9)" pattern="\d{5}[\-]\d{3}"
-                    required><br>
-                Sexo: <input type="radio" class="info" name="gender"> Masculino
-                <input type="radio" name="gender"> Feminino <br>
-                Data de Nascimento: <input type="date" class="info" name="Date" required><br>
-                Senha: <input type="password" class="info" name="Password" placeholder="Senha" required><br>
-            </div>
-        </div>
-        <h5 class="title">Informações para contato</h5>
-        <div id="personal">
-            <div class=slanome>
-                Telefone: <input type="number" class="info" name="Tefelone" pattern="[\(]\d{2}[\)]\d{4}[\-]\d{4}"
-                    placeholder="(99)9999-9999" required> <br>
-                E-mail: <input type="text" class="info" name="E-mail" placeholder="Digite seu e-mail" required> <br>
-            </div>
-        </div>
-        <div id="buttons"> <button type="reset" name="reset">Cancelar</button> <button type="submit"
-                name="submit">Enviar</button>-->
-    </form>
+    </div>
 
     <footer class="page-footer font-small unique-color-dark" style="background-color: #7071FA;">
 
