@@ -8,11 +8,10 @@
     <link href="../stylesheets/bootstrap-4.5.2-dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/beauty/css-doc-infos.css">
     <link rel="stylesheet" href="../stylesheets/maps.css">
-
-    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"
-        rel="stylesheet">
+    
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"rel="stylesheet">
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
-
+    
     <script src="../stylesheets/bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
     <script src="../stylesheets/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
 
@@ -22,8 +21,13 @@
     <script src="../javascripts/ibmWatson.js"></script>
 
     <!-- Maps Configuration -->
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5D0E0EkGVci29jwAyJk8tH_2yARyy-ug&callback=initMap&libraries=&v=weekly"
+    defer
+    ></script>
 
+    
     <title>Doctors</title>
 
 </head>
@@ -94,28 +98,45 @@
                             <div>
                                 <p>
                                     Nome: Ana Mesquita <br>
-                                    Numero para atendimento: 9999-9999 <br>
-                                    Local de atendimento <br>
+                                    Numero para atendimento:  (19) 3756-3000 <br>
                                     CRM: 99999 - SP <br>
-
-                                <div id="map1"></div>
+                                    Local de atendimento: <br>
                                 </p>
+
+                                <iframe width="1200" height="450" frameborder="0" style="border:0;" 
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc4z8nS_EyJQRYneGqlaZfuQ&key=AIzaSyC4vIIuK_cJxvbEySs3SOc7KwAjYp3Gb1g" allowfullscreen></iframe>
+                                
                             </div>
 
                             <div>
                                 <p>
                                     Nome: Kauã Landim Vinhas <br>
-                                    Numero para atendimento: 9997-9997 <br>
-                                    Local de atendimento <br>
+                                    Numero para atendimento: (19) 3212-0421 <br>
                                     CRM: 99997 - SP<br>
-
-                                <div id="map2"></div>
+                                    Local de atendimento
                                 </p>
+
+                                <iframe width="1200" height="450" frameborder="0" style="border:0" 
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJyyo4MgjGyJQRf7kaSO0F1VI&key=AIzaSyC4vIIuK_cJxvbEySs3SOc7KwAjYp3Gb1g" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                     </p>
-                    <p>Agendar Consulta com chatbot</p>
+                    <div class="panel-heading" id="accordion">
+                        <div class="btn-group pull-right">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseOne">Marcar consulta com chatbot</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="panel-collapse collapse" id="collapseOne">
+                        <form name="formChatbot" method="POST">
+                            <input type="text">
+                            <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
+                        </form>
+                        <br>
+                        <div id="chat"></div>
+                    </div>
                 </div>
 
                 <div>
@@ -124,22 +145,53 @@
                     <div id="ChildVerticalTab_2">
                         <ul class="resp-tabs-list ver_1">
                             <li>Nicolly Resende</li>
+                            <li>Felix Canário Braga</li>
                         </ul>
                         <div class="resp-tabs-container ver_1">
                             <div>
                                 <p>
                                     Nome: Nicolly Resende <br>
-                                    Numero para atendimento: 9996-9996 <br>
-                                    Local de atendimento <br>
+                                    Numero para atendimento: (19) 3722-4601 <br>
                                     CRM: 99996 - SP<br>
-
-                                <div id="map3"></div>
+                                    Local de atendimento:
                                 </p>
+
+                                <iframe width="1200" height="450" frameborder="0" style="border:0" 
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH1wg0H7PyJQRLr8MmrID8Wo&key=AIzaSyC4vIIuK_cJxvbEySs3SOc7KwAjYp3Gb1g" allowfullscreen></iframe>
                             </div>
+
+                            <div>
+                                <p>
+                                    Nome: Felix Canário Braga <br>
+                                    Numero para atendimento: (19) 3734-3000 <br>
+                                    CRM: 99996 - SP<br>
+                                    Local de atendimento:
+                                </p>
+
+                                <iframe width="1200" height="450" frameborder="0" style="border:0" 
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJK8J_gEDPyJQROEjR-fKMDsw&key=AIzaSyC4vIIuK_cJxvbEySs3SOc7KwAjYp3Gb1g" allowfullscreen></iframe>
+                            </div>
+
                         </div>
                     </div>
-                    </p>
-                    <p>Agendar Consulta com chatbot</p>
+
+
+                    <!-- Chatbot chat (fix necessary) -->
+                    <div class="panel-heading" id="accordion">
+                        <div class="btn-group pull-right">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseOne">Marcar consulta com chatbot</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="panel-collapse collapse" id="collapseOne">
+                        <form name="formChatbot" method="POST">
+                            <input type="text">
+                            <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
+                        </form>
+                        <br>
+                        <div id="chat"></div>
+                    </div>
                 </div>
 
                 <div>
@@ -153,12 +205,13 @@
                             <div>
                                 <p>
                                     Nome: Eliel Lourenço <br>
-                                    Numero para atendimento: 9998-9998 <br>
-                                    Local de atendimento <br>
+                                    Numero para atendimento: (19) 3708-9900 <br>
                                     CRM: 99998 - SP<br>
-
-                                <div id="map4"></div>
+                                    Local de atendimento:
                                 </p>
+
+                                <iframe width="1200" height="450" frameborder="0" style="border:0" 
+                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfc_-WufHyJQRIlVln1xR_8I&key=AIzaSyC4vIIuK_cJxvbEySs3SOc7KwAjYp3Gb1g" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
