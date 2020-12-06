@@ -1,109 +1,15 @@
-*{
+html,
+body {
 
-    background-color: #dae7ef;
-}
-
-#icon{
-    margin: 5px;
-}
-
-.change-slide{
-    margin-bottom: 10px;
-    
-}
-
-.side{
-    color: black;
-}
-
-.sla {
-    
-    background-color: rgb(63, 76, 248);
-    font-family: 'PT Sans', sans-serif;
-    
-}
-
-.slanome{
-    font-family: 'PT Sans', sans-serif;
-}
-
-.option{
-    padding-left: 5%;
-    color:black;
-}
-
-.text{
-
-    background-color: rgba(66, 72, 243, 0.616);
-    margin-top: 3rem;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    font-family: 'PT Sans', sans-serif;
-   
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;  
 }
 
 
-p.text a{
-    color: white;
-}
 
-
-#icon{
-    height: 100px;
-    width:100px;
-}
-
-.image{
-
-    padding-top: 50px;
-    height: 300px;
-    padding-bottom: 30px;
-}
-
-#debug{
-    padding-top: 50px;
-    padding-bottom: 30px;
-    max-width: 400px;
-   
-}
-
-.carousel-inner img {
-margin:auto;
-}
-
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-
-  height: 50px;
-  width: 50px;
-  outline: black;
-  background-size: 50%, 50%;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: black;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color :black;
-}
-
-.carousel-indicators .active{
-    background-color: black;
-   
-}
-
-.centro{
-    width: 1000px;
-    height: 300px;
-}
 
 
 

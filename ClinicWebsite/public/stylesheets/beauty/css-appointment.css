@@ -1,70 +1,11 @@
-*{
+html,
+body {
 
-    background-color: #dae7ef;
-}
-
-
-
-.title{
-text-align: center;
-/* border-radius: 100px; */
-}
-
-#personal{
-    margin-top: 1.2rem;
-    margin-bottom: 2rem;
-    background-color: blue;
-    max-width: 80%;
-    margin-left: 10%;
-    padding: 10px;
-    border-radius: 10px;
-    
-}
-
-.info{
-  
-   margin-top: 1rem;
-   margin-bottom: 0.2rem;
-   
-}
-
-.slanome{
-    padding:1rem;
-    background-color: rgba(189, 189, 247, 0.514);
-    border-radius: 50px;
-}
-
-
-#name-page{
-    text-align: center;
-    border-radius: 10px;
-    background-color: blue;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 123px;
-    margin-bottom: 4rem;
-}
-.cadastro{
-
-    padding-top:100px;
-}
-
-#buttons{
-   padding-left: 330px;
-   margin-top: 1rem;
-   background-color:  rgba(94, 80, 248, 0.267);
-}
-
-.title{
-    position: center;
-}
-
-.navbar-blue{
-    background-color: blue;
-
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 
