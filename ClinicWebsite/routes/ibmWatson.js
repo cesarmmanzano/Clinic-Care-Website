@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const ibmWatson = require('../lib/ibmWatsonCredentials.js');
+const ibmWatson = require('../lib/ibmWatsonCredentials');
 
 router.post('/assistant', function (req, res, next) {
     let { text, contextDialog } = req.body;

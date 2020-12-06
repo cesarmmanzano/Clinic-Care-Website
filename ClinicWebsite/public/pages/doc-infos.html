@@ -124,6 +124,8 @@
                         </div>
                     </div>
                     </p>
+
+                     <!-- Chatbot chat (fix necessary) -->
                     <div class="panel-heading" id="accordion">
                         <div class="btn-group pull-right">
                             <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse"
@@ -132,8 +134,8 @@
                     </div>
                     <br>
                     <div class="panel-collapse collapse" id="collapseOne">
-                        <form name="formChatbot" method="POST">
-                            <input type="text">
+                        <form name="chatForm" method="POST">
+                            <input type="text" name="textMessage">
                             <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
                         </form>
                         <br>
@@ -189,8 +191,8 @@
                     </div>
                     <br>
                     <div class="panel-collapse collapse" id="collapseOne">
-                        <form name="formChatbot" method="POST">
-                            <input type="text">
+                        <form name="chatForm" method="POST">
+                            <input type="text" name="textMessage">
                             <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
                         </form>
                         <br>
@@ -231,8 +233,8 @@
                     </div>
                     <br>
                     <div class="panel-collapse collapse" id="collapseOne">
-                        <form name="formChatbot" method="POST">
-                            <input type="text">
+                        <form name="chatForm" method="POST">
+                            <input type="text" name="textMessage">
                             <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
                         </form>
                         <br>
@@ -245,6 +247,7 @@
 
         <br><br>
 
+        <!-- Footer -->
         <footer class="page-footer font-small unique-color-dark" style="background-color: #7071FA;">
 
             <div class="row py-1 d-flex align-items-center"></div>

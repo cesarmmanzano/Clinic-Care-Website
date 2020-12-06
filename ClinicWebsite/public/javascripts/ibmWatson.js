@@ -9,14 +9,15 @@ function sendMessageToAssistant() {
     else
         chat.innerHTML += 'Voce -->' + textMessage + '<br>';
 
-    document.chat.textMessage.value = ''; 
+    document.chatForm.textMessage.value = ''; 
 
     //Post para o serviço da ibm
     $.post("/ibmWatson/assistant",
         { text: textMessage, contextDialog },
 
         function (returnedData, statusRequest) {
-            if (returnedData.status === 'ERRO') alert(returnedData.data);
+            if (returnedData.status === 'ERRO') 
+                alert(returnedData.data);
             else {
                 chat.innerHTML += 'ChatBot --> ' + returnedData.data.result.output.text + '<br>'; 
                 contextDialog = JSON.stringify(returnedData.data.result.context);
