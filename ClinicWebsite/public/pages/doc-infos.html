@@ -125,22 +125,8 @@
                     </div>
                     </p>
 
-                     <!-- Chatbot chat (fix necessary) -->
-                    <div class="panel-heading" id="accordion">
-                        <div class="btn-group pull-right">
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse"
-                                data-parent="#accordion" href="#collapseOne">Marcar consulta com chatbot</button>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="panel-collapse collapse" id="collapseOne">
-                        <form name="chatForm" method="POST">
-                            <input type="text" name="textMessage">
-                            <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
-                        </form>
-                        <br>
-                        <div id="chat"></div>
-                    </div>
+                    <p>Clique abaixo para marcar consulta</p>
+
                 </div>
 
                 <div>
@@ -181,23 +167,8 @@
                         </div>
                     </div>
 
+                    <p>Clique abaixo para marcar consulta</p>
 
-                    <!-- Chatbot chat (fix necessary) -->
-                    <div class="panel-heading" id="accordion">
-                        <div class="btn-group pull-right">
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse"
-                                data-parent="#accordion" href="#collapseOne">Marcar consulta com chatbot</button>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="panel-collapse collapse" id="collapseOne">
-                        <form name="chatForm" method="POST">
-                            <input type="text" name="textMessage">
-                            <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
-                        </form>
-                        <br>
-                        <div id="chat"></div>
-                    </div>
                 </div>
 
                 <div>
@@ -224,27 +195,30 @@
                     </div>
                     </p>
 
-                    <!-- Chatbot chat (fix necessary) -->
-                    <div class="panel-heading" id="accordion">
-                        <div class="btn-group pull-right">
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse"
-                                data-parent="#accordion" href="#collapseOne">Marcar consulta com chatbot</button>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="panel-collapse collapse" id="collapseOne">
-                        <form name="chatForm" method="POST">
-                            <input type="text" name="textMessage">
-                            <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
-                        </form>
-                        <br>
-                        <div id="chat"></div>
-                    </div>
+                    <p>Clique abaixo para marcar consulta</p>
 
                 </div>
             </div>
         </div>
 
+        <br>
+        
+        <!-- Chatbot chat (fix necessary) -->
+        <div class="panel-heading" id="accordion">
+            <div class="btn-group pull-right">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseOne">Marcar consulta com chatbot</button>
+            </div>
+        </div>
+        <br>
+        <div class="panel-collapse collapse" id="collapseOne">
+            <form name="chatForm" method="POST">
+                <input type="text" name="textMessage">
+                <input type="button" onclick="sendMessageToAssistant();" value="Enviar">
+            </form>
+            <br>
+            <div id="chat"></div>
+        </div>
         <br><br>
 
         <!-- Footer -->

@@ -7,7 +7,7 @@ function sendMessageToAssistant() {
     if (textMessage === undefined || textMessage === '')
         textMessage = '';
     else
-        chat.innerHTML += 'Voce -->' + textMessage + '<br>';
+        chat.innerHTML += 'Voce: ' + textMessage + '<br>';
 
     document.chatForm.textMessage.value = ''; 
 
@@ -19,7 +19,7 @@ function sendMessageToAssistant() {
             if (returnedData.status === 'ERRO') 
                 alert(returnedData.data);
             else {
-                chat.innerHTML += 'ChatBot --> ' + returnedData.data.result.output.text + '<br>'; 
+                chat.innerHTML += 'Chatbot: ' + returnedData.data.result.output.text + '<br>'; 
                 contextDialog = JSON.stringify(returnedData.data.result.context);
             }
         }
