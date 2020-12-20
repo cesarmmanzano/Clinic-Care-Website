@@ -8,7 +8,7 @@ router.post('/assistant', function (req, res, next) {
 
     const params = {
         input: { text },
-        workspaceId: '56de335e-f6d8-44e1-a607-9479c1fcd3db',
+        workspaceId: 'WORKSPACEID',
         context,
     }
 
